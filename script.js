@@ -65,8 +65,4 @@ function el(elm) {
     return document.getElementById(elm)
 }
 
-function getKeyByValue(object, value) {
-    return Object.keys(object).find(key => object[key] === value);
-}
-
 el('search').addEventListener("input", e => {search(e.target.value)})
