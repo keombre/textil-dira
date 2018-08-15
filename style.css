@@ -1,0 +1,35 @@
+.before-text {
+    width: 25px;
+    margin-right: -25px;
+    position: relative;
+    right: 35px;
+}
+
+i.fa {
+    color: #607d8b;
+}
+
+#ether p {
+    color: rgb(78, 78, 78);
+    line-height: 1.8em;
+}
+
+#ether p b {
+    color: initial;
+}
+
+.device {
+    display: none;
+}
+
+#ether {
+    display: none;
+}
+
+#tel {
+    display: none;
+}
+
+#notFound {
+    display: none;
+}

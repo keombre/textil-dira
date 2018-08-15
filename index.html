@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta author="Keombre">
+    <title>Díra</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text-center">
+            <h1 class="display-4 px-3 py-3 pt-md-5 pb-md-4 mx-auto">Mám díru a nevím co s ní</h1>
+            <p class="lead">Napiš kód portu nebo číslo linky a žasni!</p>
+        </div>
+        <div class="row pb-5">
+            <div class="col-md-5 offset-md-3 pb-3">
+                <input autofocus type="text" placeholder="Kód portu, nebo číslo linky" class="text-center form-control form-control-lg" id="search">
+                <p class="pt-2 text-center lead text-danger" id="notFound">Nic nenalezeno</p>
+            </div>
+            <div class="col-md-2">
+                <button onclick="search(el('search').value)" class="btn btn-primary btn-block form-control-lg">Hledat</button>
+            </div>
+        </div>
+        <div class="row" id="ether">
+            <div class="col-md-3 offset-md-2 offset-1 pb-5">
+                <h3><i class="fa fa-sign-in before-text"></i>Umístění</h3>
+                <p class="lead">
+                    Patro: <b id="ether-floor"></b><br />
+                    Místnost: <b id="ether-room"></b><br />
+                    Zásuvka: <b id="ether-port"></b><br />
+                </p>
+                <hr>
+
+                <p class="lead device" id="printer">
+                    <b><i class="fa fa-print"></i> Tiskárna</b><br />
+                    <span class="small ml-4">Evidenční číslo: <b class="attrib"></b></span>
+                </p>
+
+                <p class="lead device" id="computer">
+                    <b><i class="fa fa-desktop"></i> Počítač</b><br />
+                    <span class="small ml-4">Evidenční číslo: <b class="attrib"></b></span>
+                </p>
+
+                <p class="lead device" id="ap">
+                    <b><i class="fa fa-wifi"></i> Access Point</b><br />
+                </p>
+
+                <p class="lead device" id="server">
+                    <b><i class="fa fa-server"></i> Server</b><br />
+                </p>
+
+                <p class="lead device" id="switch">
+                    <b><i class="fa fa-sitemap"></i> Switch</b><br />
+                    <span class="small ml-4">Značka: <b class="attrib"></b></span>
+                </p>
+
+                <p class="lead device" id="empty">
+                    <b><i class="fa fa-minus-square"></i> Nic nezapojeno</b><br />
+                </p>
+            </div>
+            <div class="col-md-3 offset-md-2 offset-1">
+                <h3><i class="fa fa-sign-out before-text"></i>Rack</h3>
+                <p class="lead">
+                    Jméno: <b id="rack-room"></b><br />
+                    Patch: <b id="rack-patch"></b><br />
+                    Díra: <b id="rack-port"></b><br />
+                </p>
+            </div>
+        </div>
+        <div class="row" id="tel">
+            <div class="col-md-3 offset-md-2 offset-1 pb-5">
+                <h3><i class="fa fa-sign-in before-text"></i>Umístění</h3>
+                <p class="lead">
+                    Patro: <b id="tel-floor"></b><br />
+                    Místnost: <b id="tel-room"></b><br />
+                    Zásuvka: <b id="tel-port"></b><br />
+                </p>
+                <hr>
+
+                <p class="lead device" id="tel-phone">
+                    <b><i class="fa fa-sitemap"></i> Pevná linka</b><br />
+                </p>
+
+                <p class="lead device" id="tel-empty">
+                    <b><i class="fa fa-minus-square"></i> Nic nezapojeno</b><br />
+                </p>
+            </div>
+            <div class="col-md-3 offset-md-2 offset-1">
+                <h3><i class="fa fa-sign-out before-text"></i>Ústředna</h3>
+                <p class="lead">
+                    Linka: <b id="tel-line"></b><br />
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
