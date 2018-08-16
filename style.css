@@ -33,3 +33,21 @@ i.fa {
 #notFound {
     display: none;
 }
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+}
