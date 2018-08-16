@@ -30,6 +30,10 @@ function displayTel(port) {
 
     el('tel-' + tel[port].dev).style.display = "block";
     el('tel').style.display = "flex";
+    window.scrollTo({
+        top: el('tel').getBoundingClientRect().top,
+        behavior: "smooth"
+    });
 }
 
 function displayEther(port) {
@@ -45,6 +49,10 @@ function displayEther(port) {
 
     el(ether[port].dev).style.display = "block";
     el('ether').style.display = "flex";
+    window.scrollTo({
+        top: el('ether').getBoundingClientRect().top,
+        behavior: "smooth"
+    });
 }
 
 function beforeSearch() {
