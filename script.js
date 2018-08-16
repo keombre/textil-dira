@@ -26,7 +26,8 @@ function displayTel(port) {
     el('tel-room').innerText = "" + port.substring(0,1) + ('0' + (port.charCodeAt(1)-96)).slice(-2);
     el('tel-port').innerText = port.charCodeAt(2)-96;
 
-    el('tel-line').innerText = tel[port].line
+    el('tel-line').innerText = tel[port].line;
+    el('tel-hole').innerText = "T" + port.toUpperCase();
 
     el('tel-' + tel[port].dev).style.display = "block";
     el('tel').style.display = "flex";
