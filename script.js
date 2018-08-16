@@ -46,6 +46,7 @@ function displayEther(port) {
     el('rack-room').innerText = racks[ether[port].loc[0]];
     el('rack-patch').innerText = ether[port].loc[1];
     el('rack-port').innerText = ether[port].loc[2];
+    el('ether-line').innerText = ether[port].old;
 
     el(ether[port].dev).style.display = "block";
     el('ether').style.display = "flex";

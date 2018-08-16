@@ -4,29 +4,35 @@ ether = {
     "0ea": {
         "loc": [0, 2, 15],
         "dev": "printer",
-        "attrib": "01 2560"
+        "attrib": "01 2560",
+        "old": "1/3"
     },
     "0eb": {
         "loc": [0, 2, 15],
         "dev": "switch",
-        "attrib": "TP-Link"
+        "attrib": "TP-Link",
+        "old": "1/3"
     },
     "0ec": {
         "loc": [0, 2, 15],
-        "dev": "server"
+        "dev": "server",
+        "old": "1/3"
     },
     "0ed": {
         "loc": [0, 2, 15],
         "dev": "computer",
-        "attrib": "01 2560"
+        "attrib": "01 2560",
+        "old": "1/3"
     },
     "0ee": {
         "loc": [0, 2, 15],
-        "dev": "ap"
+        "dev": "ap",
+        "old": "1/3"
     },
     "0ef": {
         "loc": [0, 2, 15],
-        "dev": "empty"
+        "dev": "empty",
+        "old": "1/3"
     },
 }
 
