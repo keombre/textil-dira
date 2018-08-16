@@ -60,7 +60,7 @@ function beforeSearch() {
     [
         'notFound',
         'ether', 'printer', 'computer', 'ap', 'server', 'switch', 
-        'tel', 'tel-phone', 'tel-empty'
+        'tel', 'tel-phone', 'tel-empty', 'tel-fax'
     ].forEach(e => {
         el(e).removeAttribute('style');
     });
